@@ -66,8 +66,8 @@ function loadToDoList() {
   });
 };
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
   if (taskInput.value.trim()) {
     const newTask = createNewTask(taskInput.value);
     taskList.appendChild(newTask);
