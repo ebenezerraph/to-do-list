@@ -49,6 +49,7 @@ footer button {
   border: 1px solid #f2f2f2;
   background-color: #0069cc;
   color: #f2f2f2;
+  box-sizing: border-box;
   border-radius: 5px;
   padding: 8px;
   width: 130px;
