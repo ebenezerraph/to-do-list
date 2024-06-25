@@ -1,12 +1,6 @@
-h1 {
-  color: #0069cc;
-  font-family: 'Courier New';
-  font-weight: 800;
-  margin: 0;
-}
-
 * {
-  font-family: monospace;
+  font-family: cursive;
+  font-weight: 600;
 }
 
 body {
@@ -17,57 +11,22 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  font-size: 120%;
   background-color: #f2f2f2;
-  font-weight: 500;
 }
 
 body > div {
   box-sizing: border-box;
   padding: 20px;
-  border-radius: 30px;
+  border-radius: 50px;
   width: 80%;
   background-color: white;
 }
 
-footer {
-  width: 100%;
-  height: 50px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  color: #f2f2f2;
-  background-color: #0069cc;
-  padding: 5px 10px;
-  align-items: center;
-}
-
-footer button {
-  border: 1px solid #f2f2f2;
-  background-color: #0069cc;
-  color: #f2f2f2;
-  box-sizing: border-box;
-  border-radius: 5px;
-  padding: 8px;
-  width: 130px;
-  cursor: pointer;
-}
-
-footer button:hover {
-  background-color: #f2f2f2;
+h1 {
   color: #0069cc;
-  transition: all ease 0.3s;
-}
-
-footer a:hover {
-  text-decoration: none;
-}
-
-footer a:visited {
- color: inherit;
+  font-weight: 900;
+  margin: 0;
+  line-height: 28px;
 }
 
 #new-task-input {
@@ -75,22 +34,23 @@ footer a:visited {
   padding: 0.5rem;
   font-size: 1.2rem;
   background-color: #f2f2f2;
-  border-radius: 20px;
+  border-radius: 100px;
   box-sizing: border-box;
-  margin: 20px 0;
+  height: 50px;
+  margin: 20px 0 15px;
   border: 0;
+  font-weight: 500;
 }
 
 #add-task-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-weight: 500;
 }
 
 #add-task-form > button {
   border: 0;
-  border-radius: 10px;
+  border-radius: 100px;
   padding: 10px;
   box-sizing: border-box;
   color: white;
@@ -99,8 +59,6 @@ footer a:visited {
   background-color: #0069cc;
   transition: all 0.3s ease;
   cursor: pointer;
-  margin-bottom: 10px;
-  font-weight: 600;
 }
 
 #add-task-form > button:hover {
@@ -113,7 +71,6 @@ footer a:visited {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-weight: 600;
 }
 
 .task-item {
@@ -123,8 +80,10 @@ footer a:visited {
   justify-content: space-between;
   background-color: #f2f2f2;
   padding: 0.5rem;
-  margin-top: 0.5rem;
-  border-radius: 20px;
+  box-sizing: border-box;
+  height: 55px;
+  margin-top: 10px;
+  border-radius: 100px;
 }
 
 .task-item input {
@@ -175,6 +134,46 @@ footer a:visited {
 
 .delete-button:hover {
   background-color: inherit;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  color: #f2f2f2;
+  background-color: #0069cc;
+  padding: 5px 10px;
+  align-items: center;
+}
+
+footer button {
+  border: 1px solid #f2f2f2;
+  background-color: #0069cc;
+  color: #f2f2f2;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 8px;
+  width: 130px;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background-color: #f2f2f2;
+  color: #0069cc;
+  transition: all ease 0.3s;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+footer a:visited {
+ color: inherit;
 }
 
 ::-webkit-scrollbar {
